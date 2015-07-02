@@ -17,6 +17,10 @@ profile
 DerivedData
 .idea/
 # Pods - for those of you who use CocoaPods
+<<<<<<< HEAD
 Pods
 # Carthage
 Carthage
+=======
+Pods
+>>>>>>> 4d050038c14957e1fa11d7831435112734ff3e70
