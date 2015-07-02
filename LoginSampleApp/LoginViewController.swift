@@ -19,6 +19,12 @@ class LoginViewController : UIViewController {
         
         keychain["user_id"]   = textFieldId.text
         keychain["user_pass"] = textFieldPassword.text
+        
+        let alertview = UIAlertView(title: "saved",
+                                  message: "ID and Pass are saved.",
+                                 delegate: nil,
+                        cancelButtonTitle: "OK")
+        alertview.show()
     }
     
     @IBAction func tappedClear(sender: AnyObject) {
