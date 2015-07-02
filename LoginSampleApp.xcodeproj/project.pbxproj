@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		36E4C4411B4525D000250CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4C4401B4525D000250CD6 /* AppDelegate.swift */; };
-		36E4C4431B4525D000250CD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4C4421B4525D000250CD6 /* ViewController.swift */; };
 		36E4C4461B4525D000250CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E4C4441B4525D000250CD6 /* Main.storyboard */; };
 		36E4C4481B4525D000250CD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E4C4471B4525D000250CD6 /* Images.xcassets */; };
 		36E4C44B1B4525D000250CD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E4C4491B4525D000250CD6 /* LaunchScreen.xib */; };
 		36E4C4571B4525D100250CD6 /* LoginSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4C4561B4525D100250CD6 /* LoginSampleAppTests.swift */; };
+		36E4C4611B452C3C00250CD6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4C4601B452C3C00250CD6 /* LoginViewController.swift */; };
+		36E4C4641B4537DB00250CD6 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E4C4631B4537DB00250CD6 /* KeychainAccess.framework */; };
+		36E4C4651B4537DB00250CD6 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36E4C4631B4537DB00250CD6 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +27,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		36E4C4661B4537DB00250CD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36E4C4651B4537DB00250CD6 /* KeychainAccess.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		36E4C43B1B4525D000250CD6 /* LoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E4C43F1B4525D000250CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E4C4401B4525D000250CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36E4C4421B4525D000250CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36E4C4451B4525D000250CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36E4C4471B4525D000250CD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36E4C44A1B4525D000250CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		36E4C4501B4525D100250CD6 /* LoginSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E4C4551B4525D100250CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E4C4561B4525D100250CD6 /* LoginSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSampleAppTests.swift; sourceTree = "<group>"; };
+		36E4C4601B452C3C00250CD6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		36E4C4631B4537DB00250CD6 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E4C4641B4537DB00250CD6 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 		36E4C4321B4525D000250CD6 = {
 			isa = PBXGroup;
 			children = (
+				36E4C4631B4537DB00250CD6 /* KeychainAccess.framework */,
 				36E4C43D1B4525D000250CD6 /* LoginSampleApp */,
 				36E4C4531B4525D100250CD6 /* LoginSampleAppTests */,
 				36E4C43C1B4525D000250CD6 /* Products */,
@@ -78,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				36E4C4401B4525D000250CD6 /* AppDelegate.swift */,
-				36E4C4421B4525D000250CD6 /* ViewController.swift */,
 				36E4C4441B4525D000250CD6 /* Main.storyboard */,
+				36E4C4601B452C3C00250CD6 /* LoginViewController.swift */,
 				36E4C4471B4525D000250CD6 /* Images.xcassets */,
 				36E4C4491B4525D000250CD6 /* LaunchScreen.xib */,
 				36E4C43E1B4525D000250CD6 /* Supporting Files */,
@@ -122,6 +141,7 @@
 				36E4C4371B4525D000250CD6 /* Sources */,
 				36E4C4381B4525D000250CD6 /* Frameworks */,
 				36E4C4391B4525D000250CD6 /* Resources */,
+				36E4C4661B4537DB00250CD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E4C4431B4525D000250CD6 /* ViewController.swift in Sources */,
+				36E4C4611B452C3C00250CD6 /* LoginViewController.swift in Sources */,
 				36E4C4411B4525D000250CD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LoginSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +376,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LoginSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
